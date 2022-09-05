@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 @import './colors.css';
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
     font-family: 'Elsie';
     font-weight: normal;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+  color: var(--secondary-text-color);
+  font-family: 'Roboto';
 }
 
 #background-video {
@@ -51,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .food-collection {
-  width: 200px;
+  width: 150px;
   height: auto;
   overflow: hidden;
   margin: 20px auto 0 auto;
@@ -59,4 +69,35 @@ h1, h2, h3, h4, h5, h6 {
 
 .food-collection img {
   margin-bottom: -40px;
+}
+
+.recipes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipes-container header {
+  text-align: center;
+  width: min(80%, 210px);
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.recipe-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: linear-gradient(180deg, rgba(227, 143, 24, 0.75) 0%, rgba(223, 139, 20, 0.4725) 56.25%, rgba(223, 139, 20, 0.66) 98.96%);
+  border: 1.45px solid rgba(230, 150, 52, 1);
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.recipe-card figure img {
+  width: 35px;
+  height: auto;
+  border-radius: 50%;
 }
