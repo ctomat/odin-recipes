@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 @import './colors.css';
 
+body {
+  background-color: #8C5B3A;
+}
+
 h1, h2, h3 {
     font-family: 'Elsie';
     font-weight: normal;
+}
+
+h1 {
+  font-size: 24px;
 }
 
 h2 {
@@ -14,6 +22,10 @@ h3 {
   font-size: 16px;
   color: var(--secondary-text-color);
   font-family: 'Roboto';
+}
+
+a {
+  text-decoration: none;
 }
 
 #background-video {
@@ -77,6 +89,7 @@ h3 {
   align-items: center;
   height: 60%;
   width: auto;
+  max-height: 375px;
   gap: 20px;
 }
 
@@ -109,4 +122,47 @@ h3 {
   width: 35px;
   height: auto;
   border-radius: 50%;
+}
+
+/* *TABLET SCREEN STYLES* */
+
+@media only screen and (min-width: 600px) {
+  .title h1 {
+    font-size: 28px;
+  }
+
+  .title img {
+    width: 60px;
+    height: auto;
+  }
+
+  .food-collection {
+    width: 250px;
+    height: auto;
+  }
+
+  .recipes-container {
+    height: 50%;
+    width: auto;
+    max-height: 400px;
+  }
+
+  .recipes-container header {
+    width: 800px;
+    height: auto;
+  }
+
+  .recipes-container h2 {
+    font-size: 24px;
+  }
+
+  .recipe-card h3 {
+    font-size: 18px;
+    padding: 10px 30px;
+  }
+
+  .recipe-card figure img {
+    width: 45px;
+    height: auto;
+  }
 }
