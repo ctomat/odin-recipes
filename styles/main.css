@@ -48,3 +48,14 @@ h1, h2, h3, h4, h5, h6 {
     width: 45px;
     height: auto;
 }
+
+.food-collection {
+  width: 200px;
+  height: auto;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+}
+
+.food-collection img {
+  margin-bottom: -40px;
+}
