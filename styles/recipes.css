@@ -20,17 +20,21 @@ section {
 
 h2 {
     font-size: 30px;
+    font-weight: bold;
 }
 
 article {
     margin-bottom: 20px;
 }
 
-ul, ol {
-    margin: 0;
-    padding-left: 20px;
+p, ul, ol {
     color: var(--secondary-text-color);
     font-family: 'Josefin Sans';
+    margin: 0;
+}
+
+ul, ol {
+    padding-left: 20px;
     width: 90%;
 }
 
@@ -42,6 +46,10 @@ li {
     width: 95%;
     height: 100%;
     margin: 0;
+}
+
+.noisy {
+    padding-bottom: 20px;
 }
 
 .title {
@@ -105,6 +113,22 @@ article .recipe-card {
     border-radius: 0;
 }
 
+.link-redirect {
+    margin: 20px auto 0 auto;
+    bottom: 20px;
+    left: 80%;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.link-redirect a {
+    color: var(--secondary-text-color);
+    width: 100%;
+    height: 100%;
+}
+
 /* *TABLET SCREEN STYLES* */
 
 @media only screen and (min-width: 600px) {
@@ -117,7 +141,6 @@ article .recipe-card {
         height: auto;
         border-radius: 0;
     }
-    
 }
 
 /* *DESKTOP SCREEN STYLES* */
@@ -128,6 +151,10 @@ article .recipe-card {
         font-weight: bold;
     }
 
+    section {
+        margin-bottom: -150px;
+    }
+
     .recipe-card figure img {
         position: relative;
         left: 100px;
@@ -135,10 +162,16 @@ article .recipe-card {
         height: auto;
         border-radius: 0;
     }
+
+    .link-redirect {
+        position: sticky;
+       
+        bottom: 100px;
+    }
     
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1440px) {
     body {
         font-size: 18px;
     }
