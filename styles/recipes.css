@@ -27,7 +27,7 @@ article {
     margin-bottom: 20px;
 }
 
-p, ul, ol {
+p, ul, ol, a {
     color: var(--secondary-text-color);
     font-family: 'Josefin Sans';
     margin: 0;
