@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Josefin+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 @import './colors.css';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--body-homepage-bg-color);
 }
